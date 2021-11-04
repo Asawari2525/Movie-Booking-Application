@@ -1,24 +1,20 @@
-.heading{
-    background-color: #222;
-    height:36px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 32px;
-    padding-left: 16px;
+.header{
+  background-color:  #222;
+  height: 36px;
+  padding: 8px 32px 8px 16px;
 }
-
-.rotate-image {
-    background-color: #ff7f7f;
-    height:35px;
-    animation: rotation 8s linear infinite;
-      
-  }
-  @keyframes rotation {
-    from {
+.App-logo{
+  background: #ff7f7f;
+}
+.App-logo {
+animation: logospin 8s infinite linear;
+}
+@keyframes logospin { 
+  from{
       transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
   }
-  
+  to {
+      transform: rotate(360deg);
+  }
+
+}

@@ -1,12 +1,15 @@
-
-import { Component } from 'react';
 import './Header.css';
-import logo from './logo.svg';
-export default class Header extends Component{
+import React, { Component } from 'react';
+import logo from '../../assets/logo.svg';
 
-render(){
-    return <div className="heading">
-                    <img className="rotate-image" src={logo} alt="Logo" />;
-            </div>;
+class Header extends Component {
+    render() { 
+
+        const size = { width : 15 , height :35}
+        return ( <div className="header">
+            <img style={size} src={logo} className="App-logo" alt="logo" />
+        </div> );
+    }
 }
-}
+ 
+export default Header;
